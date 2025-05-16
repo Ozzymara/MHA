@@ -124,6 +124,13 @@ html {
     color: #218838;
 }
 
+/* Reduce horizontal padding for resource buttons to minimize empty space */
+.btn-nhs, .btn-samaritans, .btn-mindmatters {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    /* You can adjust the value as needed for best fit */
+}
+
 /* Affirmations */
 .affirmation {
     font-size: 1.2em;
@@ -140,4 +147,31 @@ h2 {
 section.container.mt-4.text-center h2 {
     color: #4A235A !important;
     font-weight: bold !important;
+}
+
+section.container.mt-4.text-center p.fs-4 {
+    font-size: 16px !important;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 576px) {
+    #resources a.btn {
+        display: block;
+        width: auto;
+        min-width: 160px;
+        max-width: 320px;
+        margin: 8px auto;
+    }
+    section.container.mt-4.text-center p.fs-4 sub {
+        display: block;
+        margin-top: 2px;
+    }
+}
+
+#resources a.btn {
+    width: auto;
+    min-width: 160px;
+    max-width: 320px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
